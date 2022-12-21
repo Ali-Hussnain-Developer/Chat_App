@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.MessageActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/card_view"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_5dp"
+        android:layout_marginVertical="@dimen/_10dp"
+        android:layout_toStartOf="@+id/imgSendBtn"
+        app:cardCornerRadius="@dimen/_10dp">
+
+        <EditText
+            android:id="@+id/edtSendMsg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:background="@null"
+            android:hint="@string/txt_enter_msg"
+            android:paddingStart="@dimen/_10dp"
+            android:textSize="@dimen/_15sp"
+            tools:ignore="Autofill,RtlSymmetry"
+            android:inputType="text" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imgSendBtn"
+        android:layout_width="@dimen/_40dp"
+        android:layout_height="@dimen/_50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:background="@drawable/send_msg_bg"
+        android:paddingStart="@dimen/_5dp"
+        android:paddingTop="@dimen/_5dp"
+        android:paddingEnd="@dimen/_5dp"
+        android:paddingBottom="@dimen/_5dp"
+        android:src="@drawable/ic_baseline_send_24"
+        tools:ignore="ContentDescription" />
+</RelativeLayout>

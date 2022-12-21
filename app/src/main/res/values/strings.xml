@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+    <string name="txt_enter_msg">Your Message</string>
+    <string name="txt_user_name">ALi Hussnain</string>
+    <string name="txt_hello">Hello</string>
+    <string name="txt_enter_name">Enter Your Name</string>
+    <string name="txt_continue">Continue</string>
+    <string name="txt_enter_otp">Enter OTP</string>
+    <string name="txt_enter_number">Enter Number</string>
+    <string name="txt_plz_enter_number">Please Enter Number</string>
+    <string name="txt_plz_enter_msg">Please Enter Message</string>
+    <string name="txt_msg_sent">Message Sent</string>
+    <string name="txt_error">Error</string>
+    <string name="txt_plz_enter_otp">"Please Enter OTP"</string>
+    <string name="txt_match">Match</string>
+    <string name="txt_try_again">Please Try Again.</string>
+    <string name="txt_chat_app">Chat App</string>
+    <string name="txt_by_ali">Developed By Ali Hussnain</string>
+    <string name="txt_data_inserted">Data Inserted</string>
+    <string name="txt_plz_enter_name">Please Enter Name</string>
+    <string name="txt_select_pic">Please Enter Name</string>
+
+</resources>

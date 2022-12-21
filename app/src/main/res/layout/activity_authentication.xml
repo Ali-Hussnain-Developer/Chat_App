@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.AuthenticationActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:src="@drawable/undraw_authentication_re_svpt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvEnterNumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:layout_marginHorizontal="@dimen/_20dp"
+        android:layout_marginVertical="@dimen/_20dp"
+        app:cardCornerRadius="@dimen/_5dp"
+        app:cardElevation="@dimen/_5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/edtNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:background="@null"
+            android:hint="@string/txt_enter_number"
+            android:inputType="number"
+            android:paddingStart="@dimen/_20dp"
+            tools:ignore="Autofill,MissingConstraints,RtlSymmetry" />
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/btnContinueNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20dp"
+        android:layout_marginVertical="@dimen/_20dp"
+        android:background="@drawable/recieve_msg_bg"
+        android:text="@string/txt_continue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvEnterNumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
